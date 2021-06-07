@@ -1,15 +1,15 @@
 cd ~/Documents/DVC/sample_data
 git init
 dvc init
-git commit -m 'initiate dvc'
+git commit -m "initiate dvc"
 
 dvc add train
 git add train.dvc .gitignore
-git commit -m 'add processed kitii train folder’
+git commit -m "add processed kitii train folder"
 
 dvc add validation
 git add validation.dvc .gitignore
-git commit -m 'add processed kitii validation folder’
+git commit -m "add processed kitii validation folder"
 
 dvc remote add -d storage s3://veerum-development-ai-datasets/sample_kitii
 
